@@ -1,0 +1,8 @@
+left_out,eta,M,grid,hybrid
+0,0.1,100,uniform:6,"hybrid:(2, 16)"
+1,0.1,100,uniform:6,"hybrid:(2, 16)"
+2,0.1,100,uniform:6,"hybrid:(2, 16)"
+3,0.1,50,uniform:6,"hybrid:(2, 16)"
+4,0.1,50,uniform:6,"hybrid:(2, 16)"
+8,0.1,100,uniform:6,"hybrid:(2, 16)"
+9,0.1,100,uniform:6,"hybrid:(2, 16)"

@@ -1,0 +1,16 @@
+stream,protocol,test_samples,test_drives,train_samples,train_drives,cal_samples,cal_drives
+E1,future-drive,370,6,1351,15,701,8
+E2,future-drive,653,7,1783,18,538,8
+E3,future-drive,311,11,842,28,334,13
+E4,future-drive,324,15,1069,39,474,18
+E5,future-drive,439,6,1297,15,564,8
+E6,future-drive,186,3,422,6,307,3
+E7,future-drive,133,13,567,34,156,15
+E8,future-drive,733,17,2345,45,965,21
+E9,future-drive,1166,28,3322,74,1476,34
+X1-2,cross-session,2974,33,1787,20,635,9
+X2-1,cross-session,2422,29,2125,23,849,10
+X3-4,cross-session,1867,72,1052,36,435,16
+X4-3,cross-session,1487,52,1361,50,506,22
+X8-9,cross-session,5964,136,2942,58,1101,25
+X9-8,cross-session,4043,83,4246,95,1718,41

@@ -1,0 +1,38 @@
+worst-stream served coverage, point and 95% interval over drive resamples:
+        policy  worst    lo    hi    ovh  p_ge_090
+hybrid:(1, 16)  0.615 0.596 0.629 12.824     0.000
+hybrid:(2, 16)  0.640 0.621 0.653 13.254     0.000
+hybrid:(2, 20)  0.573 0.549 0.591 13.267     0.000
+hybrid:(1, 12)  0.813 0.791 0.827 15.753     0.000
+hybrid:(2, 12)  0.804 0.786 0.817 16.226     0.000
+ QT-oracle:0.1  0.843 0.701 0.865 16.771     0.000
+hybrid:(1, 10)  0.930 0.912 0.937 17.271     0.998
+    uniform:10  0.828 0.809 0.833 17.395     0.000
+hybrid:(2, 10)  0.926 0.904 0.931 17.701     0.988
+   QT-cert:0.1  0.824 0.683 0.852 18.090     0.000
+     uniform:8  0.800 0.792 0.807 18.484     0.000
+ hybrid:(1, 8)  0.935 0.918 0.950 18.652     1.000
+ hybrid:(2, 8)  0.935 0.919 0.950 19.282     1.000
+QT-oracle:0.05  0.915 0.809 0.927 20.384     0.419
+  QT-cert:0.05  0.910 0.797 0.921 21.779     0.309
+     uniform:6  0.930 0.921 0.935 22.472     1.000
+     uniform:5  0.956 0.951 0.961 25.305     1.000
+QT-oracle:0.02  0.946 0.850 0.953 25.953     0.858
+      fixed:16  0.593 0.554 0.625 26.026     0.000
+  QT-cert:0.02  0.948 0.849 0.953 27.152     0.815
+      fixed:20  0.742 0.683 0.764 32.251     0.000
+      fixed:24  0.837 0.782 0.868 38.473     0.000
+      fixed:32  0.979 0.971 0.986 50.806     1.000
+      fixed:40  0.999 0.998 1.000 63.113     1.000
+      fixed:48  1.000 1.000 1.000 75.427     1.000
+
+overhead needed for worst-stream served >= 0.90 (median, 95% interval, P[family never reaches 0.90]):
+  grid    point  22.5%  median  22.5%  [ 22.4,  22.5]  P(never)=0.00
+  hybrid  point  17.3%  median  17.3%  [ 17.2,  17.4]  P(never)=0.00
+  oracle  point  20.4%  median  25.5%  [ 20.1,  26.3]  P(never)=0.14
+  ours    point  21.8%  median  27.0%  [ 21.5,  27.5]  P(never)=0.18
+  topK    point  50.8%  median  50.8%  [ 50.7,  50.9]  P(never)=0.00
+  P[hybrid needs less overhead than grid] = 1.000
+  P[grid needs less overhead than oracle] = 0.581
+  P[hybrid needs less overhead than oracle] = 1.000
+  P[grid needs less overhead than ours] = 0.691

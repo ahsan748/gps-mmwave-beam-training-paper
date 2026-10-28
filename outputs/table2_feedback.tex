@@ -1,0 +1,10 @@
+& \multicolumn{2}{c}{Set coverage} & Run & \multicolumn{2}{c}{Ovh.\ (\%)}\\
+Feedback & mean & worst & spread & mean & p95\\
+\midrule
+No feedback (static) & 0.709 & 0.276 & -- & 10.7 & 15\\
+Certificates only & 0.764 & 0.238 & 0.10 & 11.7 & 16\\
+Sweeps only, IQT~\cite{zhao2025iqt} & 0.842 & 0.737 & 0.52 & 19.8 & 28\\
+ACI, same $e_t$ & 0.886 & 0.801 & 0.34 & 38.5 & 73\\
+Certificates + sweeps & 0.845 & 0.664 & 0.24 & 18.1 & 25\\
+Oracle (every miss known)$^\ast$ & 0.854 & 0.725 & 0.04 & 16.8 & 22\\
+\bottomrule

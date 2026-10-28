@@ -1,0 +1,96 @@
+64 beams: best neighbour below best (dB) / beams within 1 dB: 0.18 / 5.9
+16 beams: best neighbour below best (dB) / beams within 1 dB: 1.47 / 2.1
+kNN conformal worst set coverage, future / new session: 0.44 / 0.31
+mass rule, random split: size / mean best-beam coverage: 6.3 / 0.89
+mass: worst set coverage future / new session: 0.55 / 0.20
+mass-ts: worst set coverage future / new session: 0.60 / 0.46
+mass: worst best-beam coverage future / new session: 0.38 / 0.09
+top-1 accuracy range (%): 4-48
+worst stream of the online set (E5, 439 samples, 4.4 sweeps): set cov / ovh online, IQT, oracle: 0.664 / 10.6%; 0.737 / 15.5%; 0.725 / 10.4%
+ACI: share of samples with all beams probed (%): 31
+|Delta_T| median / max; fewest sweeps on a stream: 0.041 / 1.49; 2
+share of misses certified, range over streams: 0.20-0.99
+extra climb probes per sample, QT-cert:0.1: 1.7
+extra climb probes per sample, uniform:6: 3.4
+eta 0.1 cert alpha 0.05: set cov mean/worst, served worst, ovh: 0.897/0.764, 0.902, 21.7%
+eta 0.1 cert alpha 0.1: set cov mean/worst, served worst, ovh: 0.852/0.692, 0.838, 18.5%
+eta 0.1 oracle alpha 0.05: set cov mean/worst, served worst, ovh: 0.903/0.767, 0.915, 20.4%
+eta 0.1 oracle alpha 0.1: set cov mean/worst, served worst, ovh: 0.854/0.725, 0.843, 16.8%
+eta 0.1 sweep alpha 0.05: set cov mean/worst, served worst, ovh: 0.890/0.777, 0.909, 23.5%
+eta 0.1 sweep alpha 0.1: set cov mean/worst, served worst, ovh: 0.846/0.721, 0.784, 19.6%
+eta 0.25 cert alpha 0.05: set cov mean/worst, served worst, ovh: 0.920/0.838, 0.916, 24.6%
+eta 0.25 cert alpha 0.1: set cov mean/worst, served worst, ovh: 0.871/0.785, 0.833, 20.7%
+eta 0.25 oracle alpha 0.05: set cov mean/worst, served worst, ovh: 0.927/0.854, 0.927, 22.3%
+eta 0.25 oracle alpha 0.1: set cov mean/worst, served worst, ovh: 0.881/0.814, 0.867, 18.2%
+eta 0.25 sweep alpha 0.05: set cov mean/worst, served worst, ovh: 0.901/0.759, 0.915, 30.3%
+eta 0.25 sweep alpha 0.1: set cov mean/worst, served worst, ovh: 0.861/0.756, 0.832, 25.8%
+eta 0.5 cert alpha 0.05: set cov mean/worst, served worst, ovh: 0.927/0.872, 0.898, 29.2%
+eta 0.5 cert alpha 0.1: set cov mean/worst, served worst, ovh: 0.881/0.789, 0.833, 25.4%
+eta 0.5 oracle alpha 0.05: set cov mean/worst, served worst, ovh: 0.938/0.894, 0.940, 23.1%
+eta 0.5 oracle alpha 0.1: set cov mean/worst, served worst, ovh: 0.894/0.856, 0.888, 18.8%
+eta 0.5 sweep alpha 0.05: set cov mean/worst, served worst, ovh: 0.896/0.751, 0.887, 41.5%
+eta 0.5 sweep alpha 0.1: set cov mean/worst, served worst, ovh: 0.861/0.772, 0.838, 37.3%
+eta 1.0 cert alpha 0.05: set cov mean/worst, served worst, ovh: 0.929/0.832, 0.856, 29.9%
+eta 1.0 cert alpha 0.1: set cov mean/worst, served worst, ovh: 0.885/0.775, 0.824, 28.7%
+eta 1.0 oracle alpha 0.05: set cov mean/worst, served worst, ovh: 0.945/0.918, 0.949, 23.3%
+eta 1.0 oracle alpha 0.1: set cov mean/worst, served worst, ovh: 0.903/0.880, 0.914, 19.1%
+eta 1.0 sweep alpha 0.05: set cov mean/worst, served worst, ovh: 0.898/0.802, 0.871, 56.7%
+eta 1.0 sweep alpha 0.1: set cov mean/worst, served worst, ovh: 0.862/0.735, 0.876, 52.4%
+IQT alpha 0.05 / 0.02, 64 beams: worst / ovh: 0.891 / 22.9%; 0.929 / 27.9%
+temperature-scaled mass rule, 64 beams: worst / ovh: 0.586 / 15.1%
+temperature-scaled mass rule, 16 beams: worst / ovh: 0.590 / 24.9%
+kNN top-1 + every 10th: worst / ovh: 0.930 / 17.3%
+future drives only, QT-cert:0.05: worst / ovh: 0.919 / 14.5%
+future drives only, QT-oracle:0.05: worst / ovh: 0.917 / 13.5%
+future drives only, hybrid:(1, 10): worst / ovh: 0.956 / 17.0%
+future drives only, uniform:6: worst / ovh: 0.935 / 22.4%
+future drives only, tuned ('uniform', 10): worst / ovh: 0.907 / 16.9%
+future drives only, tuned ('uniform', 8): worst / ovh: 0.961 / 18.3%
+all starts ('hybrid', 8): worst range / mean ovh: 0.935-0.976 / 18.5%
+all starts ('uniform', 8): worst range / mean ovh: 0.800-0.961 / 18.3%
+tuned start within 0.01 of best test start (streams of 15): 9-15
+tuned-uniform:10: worst [CI] / ovh: 0.907 [0.88, 0.92] / 17.0%
+tuned-hybrid:10: worst [CI] / ovh: 0.916 [0.90, 0.92] / 16.0%
+tuned-uniform:8: worst [CI] / ovh: 0.959 [0.93, 0.96] / 18.3%
+P(tuned_hybrid cheaper than tuned_grid) at 0.9: 96%
+P(tuned_grid cheaper than tuned_hybrid) at 0.93: 96%
+bursts uniform:6: worst 100-sample window / longest miss run: 0.86 / 7
+bursts QT-cert:0.05: worst 100-sample window / longest miss run: 0.19 / 52
+16 beams, overhead needed for 0.85 (median [CI], point): ours 38.7 [37.2, 49.0], 42.6; topK 76.4 [76.3, 76.5], 76.4; iqt 45.8 [44.5, 59.7], 45.4; hybrid 47.0 [46.8, 47.2], 47.0; grid 48.6 [48.5, 48.6], 48.6
+16 beams, overhead needed for 0.9 (median [CI], point): ours 47.9 [41.7, 49.3], 48.6; topK 76.4 [76.3, 88.5], 76.4; iqt 58.0 [45.6, 60.0], 58.9; hybrid 46.9 [46.9, 46.9], inf; grid 61.5 [61.4, 61.5], 61.5
+16 beams, share of replicates where the online set is cheapest (0.85 / 0.88 / 0.9): 85% / 70% / 94%
+16 beams, share of misses certified (%): 62
+Table V choice 64 beams online lto: future: QT-cert:0.02; new session: QT-cert:0.02;QT-cert:0.05
+Table V choice 64 beams online lopo: future: QT-cert:0.02; new session: QT-cert:0.05;QT-cert:0.1
+Table V choice 64 beams iqt lto: future: QT-sweep:0.02; new session: QT-sweep:0.02;QT-sweep:0.05
+Table V choice 64 beams iqt lopo: future: QT-sweep:0.02; new session: QT-sweep:0.05;QT-sweep:0.1
+Table V choice 64 beams topK lto: future: fixed:8; new session: fixed:6;fixed:8
+Table V choice 64 beams topK lopo: future: fixed:8; new session: fixed:16;fixed:32
+Table V choice 64 beams grid0 lto: future: uniform:6; new session: uniform:6
+Table V choice 64 beams grid0 lopo: future: uniform:6; new session: uniform:10;uniform:6
+Table V choice 64 beams hybrid0 lto: future: hybrid:(2, 16); new session: hybrid:(2, 16)
+Table V choice 64 beams hybrid0 lopo: future: hybrid:(2, 16); new session: hybrid:(1, 10)
+Table V choice 64 beams tuned_grid lto: future: tuned-uniform:10; new session: tuned-uniform:10
+Table V choice 64 beams tuned_grid lopo: future: tuned-uniform:10; new session: tuned-uniform:10
+Table V choice 64 beams tuned_hybrid lto: future: tuned-hybrid2:20; new session: tuned-hybrid2:20
+Table V choice 64 beams tuned_hybrid lopo: future: tuned-hybrid2:20; new session: tuned-hybrid:10
+Table V choice 16 beams online lto: future: QT-cert:0.2; new session: QT-cert:0.2
+Table V choice 16 beams online lopo: future: QT-cert:0.2; new session: QT-cert:0.1
+Table V choice 16 beams iqt lto: future: QT-sweep:0.2; new session: QT-sweep:0.2
+Table V choice 16 beams iqt lopo: future: QT-sweep:0.2; new session: QT-sweep:0.1;QT-sweep:0.2
+Table V choice 16 beams topK lto: future: fixed:4; new session: fixed:1;fixed:4
+Table V choice 16 beams topK lopo: future: fixed:4; new session: fixed:12;fixed:5
+Table V choice 16 beams tuned_grid lto: future: tuned-uniform:2; new session: tuned-uniform:2
+Table V choice 16 beams tuned_grid lopo: future: tuned-uniform:2; new session: tuned-uniform:3
+Table V choice 16 beams tuned_hybrid lto: future: tuned-hybrid2:6; new session: tuned-hybrid2:6
+Table V choice 16 beams tuned_hybrid lopo: future: tuned-hybrid2:6; new session: tuned-hybrid:3
+0.5 dB, grid every 4th from beam 0 (re-measured): worst: 0.90
+1 dB: share of certificates that are false (%): 73
+overhead saved by certificates under noise (points): 1-2
+1 dB: worst-stream loss without re-measurement: 0.03-0.09
+1 dB: share of replicates where the online set never reaches 0.85: 100%
+test drives: future-drive / cross-session: 3-28 / 29-136
+test samples: future-drive / cross-session: 133-1166 / 1487-5964
+streams with fewer than 5 test drives: 1
+validated settings (left_out 0 = none):  left_out  eta   M      grid         hybrid |         0  0.1 100 uniform:6 hybrid:(2, 16) |         1  0.1 100 uniform:6 hybrid:(2, 16) |         2  0.1 100 uniform:6 hybrid:(2, 16) |         3  0.1  50 uniform:6 hybrid:(2, 16) |         4  0.1  50 uniform:6 hybrid:(2, 16) |         8  0.1 100 uniform:6 hybrid:(2, 16) |         9  0.1 100 uniform:6 hybrid:(2, 16)
+largest change of an online scheme without the target scenario: 0.025

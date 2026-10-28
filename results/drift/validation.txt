@@ -1,0 +1,37 @@
+(1) static set on the validation stream, coverage and mean size per scenario:
+         set_cov        size      
+choice      rank   thr  rank   thr
+scenario                          
+1           0.93  0.88  1.00  1.10
+2           0.91  0.84  1.67  1.32
+3           0.79  0.78  3.33  3.05
+4           0.67  0.66  2.00  2.04
+5           0.87  0.83  1.00  1.06
+6           0.99  0.99  3.67  3.32
+7           0.93  0.92  5.00  4.36
+8           0.87  0.81  2.00  1.78
+9           0.96  0.93  3.00  2.49
+
+(2) QT + certificates (best 5 by the rule):
+            cov_mean  cov_worst  ovh_mean  ovh_min  score
+eta  M                                                   
+0.10 100.0     0.891      0.758     0.091    0.068  0.055
+0.25 100.0     0.894      0.799     0.104    0.068  0.058
+0.50 50.0      0.899      0.817     0.114    0.077  0.058
+0.25 50.0      0.892      0.810     0.100    0.077  0.058
+0.10 50.0      0.888      0.785     0.093    0.075  0.059
+    selected on validation: eta=0.1, M=100.0
+
+(4) choices with one scenario left out (0 = none):
+ left_out  eta   M      grid         hybrid
+        0  0.1 100 uniform:6 hybrid:(2, 16)
+        1  0.1 100 uniform:6 hybrid:(2, 16)
+        2  0.1 100 uniform:6 hybrid:(2, 16)
+        3  0.1  50 uniform:6 hybrid:(2, 16)
+        4  0.1  50 uniform:6 hybrid:(2, 16)
+        8  0.1 100 uniform:6 hybrid:(2, 16)
+        9  0.1 100 uniform:6 hybrid:(2, 16)
+
+(3) cheapest policy whose worst validation stream has served coverage >= 0.90:
+    uniform:  uniform:6 (validation: worst 0.924, ovh 22.5%)
+    hybrid:   hybrid:(2, 16) (validation: worst 0.906, ovh 12.5%)

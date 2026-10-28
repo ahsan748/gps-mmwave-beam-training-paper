@@ -1,0 +1,8 @@
+Position-Beam-Prediction/
+__pycache__/
+*.pyc
+results/_models/
+results/**/traces_*.pkl
+results/**/log*.txt
+test/
+quicktest/
